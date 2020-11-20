@@ -7,3 +7,8 @@
   h1 {
       font-weight: bolder;
   }
+
+  .hide {
+      display: none;
+  }
+  
