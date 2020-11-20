@@ -1,35 +1,35 @@
-
+// array of questions
 
 var questionsArray = [
     {
-        title: "Who is the only female fighter to wear UFC gold in two different weight classes?",
+        title: "Who is the only female fighter defend the belt in two different weight classes?",
         choices: ["Amanda Nunes", "Rose Namajunas", "Holly Holm", "Jessica Andrade"],
         answer: "Amanda Nunes"
     },
     {
-        title: "hey",
-        choices: ["hey", "hey", "hey", "hey"],
-        answer: "hey"
+        title: "What belt was created for a fight between Jorge Masvidal and Nate Diaz?",
+        choices: ["BMP", "TKO", "BMF", "ONE"],
+        answer: "BMF"
     },
     {
-        title: "hey",
-        choices: ["hey", "hey", "hey", "hey"],
-        answer: "hey"
+        title: "What is the shape of a regulation UFC ring?",
+        choices: ["Square", "Octogan", "Circle", "Hexagon"],
+        answer: "Octogan"
     },
     {
-        title: "hey",
-        choices: ["hey", "hey", "hey", "hey"],
-        answer: "hey"
+        title: "During Ronda Rousey’s historic 12-fight win streak, who was the only fighter to get past round one?",
+        choices: ["Miesha Tate", "Cat Zingano", "Alexis Davis", "Bethe Correia"],
+        answer: "Miesha Tate"
     },
     {
-        title: "hey",
-        choices: ["hey", "hey", "hey", "hey"],
-        answer: "hey"
+        title: "Who did Daniel Cormier beat in his UFC debut?",
+        choices: ["Dan Henderson", "Alexander Gustafsson", "Roy Nelson", "Frank Mir"],
+        answer: "Frank Mir"
     },
     {
-        title: "hey",
-        choices: ["hey", "hey", "hey", "hey"],
-        answer: "hey"
+        title: "What season of the Ultimate Fighter did Nate Diaz win?",
+        choices: ["Season 2", "Season 5", "Season 8", "Season 4"],
+        answer: "Season 5"
     }
 ]
 
@@ -38,16 +38,20 @@ var quizEl = document.getElementById("quiz");
 var currentQ = 0;
 var timerId;
 
+// execute on start button
 $("#start-button").on("click", function() {
     // start timer
-    // remove intrustions
     introEl.setAttribute("class", "hide");
+    // remove intrustions
     quizEl.removeAttribute("class", "hide");
+    // set interval countdown for timer
     timerId = setInterval(countDown, 1000);
+    // start getting questions
     getQ();
 
 });
 
+// retrieving questions
 function getQ() {
     var title = document.getElementById("question");
     var choices = document.getElementById("ans-options");
@@ -65,9 +69,11 @@ function getQ() {
     )
 }
 
+
 var score = 0;
 var currentS = document.getElementById("curScore");
 
+// answer selection and scoring
 function solutionClick () {
     if (this.value===questionsArray[currentQ].answer) {
         score+=50;
@@ -83,22 +89,24 @@ function solutionClick () {
     console.log("you clicked a button");
 }
 
-// timer
-
+// timer variables
 var timer = 100;
 var time = document.getElementById("time");
 
+// timer countdown 
 function countDown() {
     timer--;
     time.textContent = timer;
 }
 
+// game over
 function thisistheend() {
     clearInterval(timerId);
     saveScore();
-    //create end popup
+    //end popup
 }
 
+// saving score to leaderboard
 function saveScore() {
     var initials = prompt("Type your initials to save your score");   
     if (initials!=="") {

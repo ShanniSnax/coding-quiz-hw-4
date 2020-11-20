@@ -1,14 +1,29 @@
+body {
+    background-image: url("octagon.jpg");
+    text-align: center;
+}
 
-  .width {
-      text-align: center;
-      margin-top: 70px;
-  }
-
-  h1 {
-      font-weight: bolder;
-  }
-
-  .hide {
-      display: none;
-  }
+.scoretimer {
+    background-color: white;
+}
   
+
+h1 {
+    font-weight: bolder;
+}
+
+.hide {
+    display: none;
+}
+  
+#intro {
+    margin-top: 50px;
+}
+
+#quiz {
+    margin-top: 50px;
+}
+
+.background {
+    background-color: white;
+}

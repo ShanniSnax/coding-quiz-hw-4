@@ -11,37 +11,43 @@
 </head>
 
 <body>
+<div class="container">
     
     <header>
         <!--current score and timer-->
-        <div class="row">
+        <div class="row scoretimer">
             <div class="col-md-6 col-sm-12">
                 <div>Score: <span id="curScore">0</span></div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div>Timer: <span id="time">100</span></div>
             </div>
-        </header>
+    </header>
 
     <div class="container">
  
     <!--quiz instructions-->
     <section class="row" id="intro">
-        <div class="col-md-12 col-sm-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 col-sm-12 background">
             <h1>Quiz</h1>
             <h2>This is a timed quiz. Click start to begin. Goodluck!</h2>
-            <button id="start-button" class=>start</button>
+            <button id="start-button">start</button>
         </div>
-
+        <div class="col-md-3"></div>
     </section>
 
-    <!--The Quiz-->
-    <section id="quiz" class="hide row">
-        <!--The question-->
-        <h2 id="question"></h2>
-        <!--The answers-->
-        <div id = "ans-options"></div> 
-        <div id="grade"></div>
+    <!--the quiz-->
+    <section class="hide row" id="quiz">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 col-sm-12 background">
+            <!--the question-->
+            <h2 id="question"></h2>
+            <!--the answers-->
+            <div id="ans-options"></div> 
+            <div id="grade"></div>
+        </div>
+        <div class="col-md-3"></div>
     </section>
 
     <!--game over-->
@@ -67,12 +73,13 @@
             </div>
     </section>
 
-
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 <script src="quiz.js"></script>
+
 
 </body>
 
