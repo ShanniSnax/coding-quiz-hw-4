@@ -12,6 +12,11 @@ var questionsArray = [
         answer: "BMF"
     },
     {
+        title: "Who did Daniel Cormier beat in his UFC debut?",
+        choices: ["Dan Henderson", "Alexander Gustafsson", "Roy Nelson", "Frank Mir"],
+        answer: "Frank Mir"
+    },
+    {
         title: "What is the shape of a regulation UFC ring?",
         choices: ["Square", "Octogan", "Circle", "Hexagon"],
         answer: "Octogan"
@@ -22,15 +27,41 @@ var questionsArray = [
         answer: "Miesha Tate"
     },
     {
-        title: "Who did Daniel Cormier beat in his UFC debut?",
-        choices: ["Dan Henderson", "Alexander Gustafsson", "Roy Nelson", "Frank Mir"],
-        answer: "Frank Mir"
-    },
-    {
         title: "What season of the Ultimate Fighter did Nate Diaz win?",
         choices: ["Season 2", "Season 5", "Season 8", "Season 4"],
         answer: "Season 5"
+    },
+    {
+        title: "Who did Tito fight at UFC 66?",
+        choices: ["Ken Shamrock", "Chuck Liddell", "Lyoto Machida", "Forrest Griffin"],
+        answer: "Chuck Liddell"
+    },
+    {
+        title: "What fighter is known as The Count?",
+        choices: ["Michael Bisping", "Chael Sonnen", "Vitor Belfort", "Thales Leites"],
+        answer: "Michael Bisping"
+    },
+    {
+        title: "Jessica Eye was knocked out by a head kick from which of her opponents?",
+        choices: ["Cynthia Calvillo", "Julianna Pena", "Sara McMann", "Valentina Shevchenko"],
+        answer: "Valentina Shevchenko"
+    },
+    {
+        title: "At what UFC event did 'Big' John McCarthy start as referee?",
+        choices: ["UFC 7", "UFC 23", "UFC 2", "UFC 18"],
+        answer: "UFC 2"
+    },
+    {
+        title: "Who was the first Polish UFC champion?",
+        choices: ["Karolina Kowalkiewicz", "Jan Błachowicz", "Joanna Jędrzejczyk", "Marcin Held"],
+        answer: "Joanna Jędrzejczyk"
+    },
+    {
+        title: "Who is the President of the Ultimate Fighting Championship?",
+        choices: ["Lorenzo Fertitta", "Dana White", "Sean Shelby", "Art Davie"],
+        answer: "Dana White"
     }
+
 ]
 
 var introEl = document.getElementById("intro");
