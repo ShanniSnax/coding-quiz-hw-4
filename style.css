@@ -20,6 +20,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-weight: bolder;
+}
+
 .hide {
     display: none;
 }
@@ -30,6 +34,25 @@ h1 {
 
 #quiz {
     margin-top: 40px;
+}
+
+#gameover {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000bbf;
+}
+
+#scores {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000bbf;
+    text-align: center;
 }
 
 .background {
